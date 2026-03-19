@@ -8,4 +8,4 @@ Découvrez L'éclat de soi à Marseille : massages, soins du visage et bains rel
 
 [Visitez le site L'éclat de soi](https://meline-p.github.io/l-eclat-de-soi/)
 
-![img](https://meline-p.github.io/palli-palli/img/leclatdesoi.png)
+![img](https://meline-p.github.io/l-eclat-de-soi/img/leclatdesoi.png)
