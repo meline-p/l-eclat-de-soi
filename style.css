@@ -14,13 +14,13 @@
 /************* GENERAL ***************/
 /*************************************/
 html {
-  /* scroll-snap-type: y mandatory; */
+  scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
 }
 
-/* section {
+section {
   scroll-snap-align: start;
-} */
+}
 
 body {
   font-family: "Montserrat", sans-serif;
@@ -68,7 +68,9 @@ p {
   color: var(--color-white);
   background-color: var(--color-terracotta);
   border: 1px solid var(--color-terracotta);
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  transition:
+    background-color 0.3s ease,
+    transform 0.2s ease;
 }
 .brown-btn:hover {
   background-color: var(--color-silk);
@@ -80,11 +82,8 @@ p {
 /************* HERO ***************/
 /**********************************/
 .hero-bg-img {
-  background-image: linear-gradient(
-      to right,
-      rgba(0, 0, 0, 1) 0%,
-      rgba(0, 0, 0, 0) 100%
-    ),
+  background-image:
+    linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%),
     url("img/massage-pierre.avif");
   background-position: center 50%;
   background-size: cover;
@@ -206,11 +205,8 @@ p {
 /**************************************/
 
 .about-bg-img {
-  background-image: linear-gradient(
-      to right,
-      rgba(0, 0, 0, 1) 0%,
-      rgba(0, 0, 0, 0) 100%
-    ),
+  background-image:
+    linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%),
     url("img/bg-brown.png");
   background-position: right bottom;
   background-size: cover;
@@ -223,11 +219,8 @@ p {
 /*****************************************/
 
 .services-bg-img {
-  background-image: linear-gradient(
-      to right,
-      rgba(0, 0, 0, 1) 0%,
-      rgba(0, 0, 0, 0) 100%
-    ),
+  background-image:
+    linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%),
     url("img/jacuzzi.avif");
   background-position: center;
   background-size: cover;
@@ -240,11 +233,8 @@ p {
 /***************************************************/
 
 .imgbox1 {
-  background-image: linear-gradient(
-      to right,
-      rgba(0, 0, 0, 1) 0%,
-      rgba(0, 0, 0, 0) 100%
-    ),
+  background-image:
+    linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%),
     url("img/pipette.avif");
   background-position: center;
   background-size: cover;
@@ -254,11 +244,8 @@ p {
   color: white;
 }
 .imgbox2 {
-  background-image: linear-gradient(
-      to right,
-      rgba(0, 0, 0, 1) 0%,
-      rgba(0, 0, 0, 0) 100%
-    ),
+  background-image:
+    linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%),
     url("img/plateau.avif");
   background-position: center;
   background-size: cover;
@@ -268,11 +255,8 @@ p {
   color: white;
 }
 .imgbox3 {
-  background-image: linear-gradient(
-      to right,
-      rgba(0, 0, 0, 1) 0%,
-      rgba(0, 0, 0, 0) 100%
-    ),
+  background-image:
+    linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%),
     url("img/massage-pierre.avif");
   background-position: center;
   background-size: cover;
@@ -282,11 +266,8 @@ p {
   color: white;
 }
 .imgbox4 {
-  background-image: linear-gradient(
-      to right,
-      rgba(0, 0, 0, 1) 0%,
-      rgba(0, 0, 0, 0) 100%
-    ),
+  background-image:
+    linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%),
     url("img/bougie.avif");
   background-position: center;
   background-size: cover;
@@ -301,11 +282,8 @@ p {
 /*****************************************/
 
 .avis-bg-img {
-  background-image: linear-gradient(
-      to right,
-      rgba(0, 0, 0, 1) 0%,
-      rgba(0, 0, 0, 0) 100%
-    ),
+  background-image:
+    linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%),
     url("img/huile.avif");
   background-position: center;
   background-size: cover;
@@ -325,11 +303,8 @@ p {
 /**************************************/
 
 .sentence-bg-img {
-  background-image: linear-gradient(
-      to right,
-      rgba(0, 0, 0, 1) 0%,
-      rgba(0, 0, 0, 0) 100%
-    ),
+  background-image:
+    linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%),
     url("img/bg-brown.png");
   background-position: right bottom;
   background-size: cover;
@@ -342,15 +317,70 @@ p {
 /*********************************/
 
 .cta-bg-img {
-  background-image: linear-gradient(
-      to right,
-      rgba(0, 0, 0, 1) 0%,
-      rgba(0, 0, 0, 0) 100%
-    ),
+  background-image:
+    linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%),
     url("img/bougie.avif");
   background-position: center 70%;
   background-size: cover;
   background-repeat: no-repeat;
   background-clip: border-box;
   height: 100dvh;
+}
+
+/****************************************/
+/************* ANIMATIONS ***************/
+/****************************************/
+
+@keyframes beautyFade {
+  0% {
+    opacity: 0;
+    transform: scale(0.95) translateY(10px);
+    filter: blur(6px);
+  }
+
+  60% {
+    opacity: 0.7;
+    transform: scale(1.02) translateY(0);
+    filter: blur(2px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+    filter: blur(0);
+  }
+}
+
+.beauty-animation {
+  animation: beautyFade 1.6s ease-out forwards;
+}
+
+.delay-1 {
+  animation-delay: 0.5s;
+}
+.delay-2 {
+  animation-delay: 1s;
+}
+.delay-3 {
+  animation-delay: 1.5s;
+}
+.delay-4 {
+  animation-delay: 2s;
+}
+.delay-5 {
+  animation-delay: 2.5s;
+}
+.delay-6 {
+  animation-delay: 3s;
+}
+.delay-7 {
+  animation-delay: 3.5s;
+}
+
+.animate-on-scroll {
+  opacity: 0;
+}
+
+.animate-on-scroll.visible {
+  animation: beautyFade 1.6s forwards;
 }

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -30,9 +30,11 @@
   </head>
   <body class="snap-y snap-mandatory">
     <!-- NAVBAR -->
-    <section>
+    <section role="banner">
       <div class="container">
-        <header class="fixed top-0 left-0 w-full z-50">
+        <header
+          class="beauty-animation opacity-0 fixed top-0 left-0 w-full z-50"
+        >
           <div class="container mt-4 md:p-6">
             <div
               class="p-4 px-4 lg:px-10 flex items-center justify-between gap-2 md:gap-4 border-white border-1 transbox rounded-full"
@@ -40,7 +42,7 @@
               <div
                 class="flex flex-col lg:flex-row items-start lg:items-center gap-2"
               >
-                <a href="#">
+                <a href="#" aria-label="L'éclat de soi">
                   <h2 class="font-h2-clamp">
                     L'éclat <span class="text-terracotta">de soi</span>
                   </h2>
@@ -48,21 +50,29 @@
               </div>
 
               <div class="text-right md:hidden">
-                <a href="#" class="brown-btn w-fit">
+                <a href="#" class="brown-btn w-fit" aria-label="Réserver">
                   <i class="fa-solid fa-calendar"></i>
                 </a>
               </div>
 
               <div class="flex items-center md:gap-4 gap-0 hidden md:flex">
-                <a href="#about" class="text-xl hover:text-terracotta"
+                <a
+                  href="#about"
+                  class="text-xl hover:text-terracotta"
+                  aria-label="Notre spa"
                   >Notre spa</a
                 >
-                <a href="#services" class="text-xl hover:text-terracotta"
+                <a
+                  href="#services"
+                  class="text-xl hover:text-terracotta"
+                  aria-label="Prestations"
                   >Prestations</a
                 >
 
                 <div class="text-center">
-                  <a href="#" class="brown-btn">Réserver</a>
+                  <a href="#" class="brown-btn" aria-label="Réserver"
+                    >Réserver</a
+                  >
                 </div>
               </div>
             </div>
@@ -71,330 +81,413 @@
       </div>
     </section>
 
-    <!-- HERO -->
-    <section class="hero hero-bg-img">
-      <div class="container">
-        <div class="bg-black transbox rounded-4xl relative">
-          <div class="orbit orbit1 absolute top-20 left-50">
-            <div
-              class="float orbit1 bubble rounded-full h-[100px] w-[100px]"
-            ></div>
-          </div>
-          <div class="orbit orbit2 absolute top-10 right-20">
-            <div
-              class="float orbit2 bubble rounded-full h-[30px] w-[30px]"
-            ></div>
-          </div>
-          <div class="orbit orbit3 absolute bottom-30 right-70">
-            <div
-              class="float orbit3 bubble rounded-full h-[50px] w-[50px]"
-            ></div>
-          </div>
-          <div class="orbit orbit4 absolute bottom-30 left-30">
-            <div
-              class="float orbit4 bubble rounded-full h-[20px] w-[20px]"
-            ></div>
-          </div>
-          <div class="md:px-15 px-6 md:pt-15 md:pb-10 text-center">
-            <h1 class="font-h1-clamp pt-10 md:pb-8 pb-10" id="animated-title">
-              Offrez-vous un moment de sérénité absolue
-            </h1>
-
-            <h3 class="italic">
-              Massages, soins du visage et bains relaxants pour revitaliser
-              corps et esprit au cœur de Marseille
-            </h3>
-            <div class="md:p-15 px-6 md:pb-0 pb-10 hidden md:inline-flex">
-              <a href="#" class="brown-btn whitespace-nowrap"
-                >Réservez votre séance maintenant</a
-              >
-            </div>
-            <div class="md:p-15 p-6 md:hidden inline-flex">
-              <a href="#" class="brown-btn whitespace-nowrap">Réservez</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Qui sommes-nous ? -->
-    <section
-      id="about"
-      class="flex justify-center items-center about-bg-img h-dvh"
-    >
-      <div class="container bg-black transbox rounded-4xl">
-        <div class="lg:p-10 p-6">
-          <h2 class="font-h2-clamp text-center lg:pb-0 pb-6">
-            Qui sommes-nous ?
-          </h2>
-          <div
-            class="flex lg:flex-row flex-col justify-between items-center gap-6 lg:m-6"
-          >
-            <img class="lg:w-1/2 w-full rounded-2xl" src="img/spa.avif" />
-            <div class="lg:p-6">
-              <p class="">
-                Chez <span>L'éclat de soi</span>, nous allions expertise et
-                passion pour vous offrir des soins personnalisés dans un cadre
-                apaisant.
-              </p>
-              <br />
-              <p>
-                Chaque détail de notre spa est pensé pour que vous puissiez
-                lâcher prise et profiter d’un véritable moment de bien-être.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Prestations -->
-    <section
-      id="services"
-      class="flex justify-center items-center services-bg-img lg:h-dvh h-fit py-20"
-    >
-      <div class="container mx-auto px-4">
-        <div class="text-white text-center mb-12">
-          <h2 class="font-h2-clamp">Prestations</h2>
-          <p class="mt-4 text-lg md:text-xl">
-            Découvrez nos soins conçus pour votre détente et votre beauté :
-          </p>
-        </div>
-
-        <!-- Cards -->
-        <div class="flex gap-6 items-stretch flex-wrap">
-          <!-- Carte 1 -->
-          <div class="flex flex-col flex-1 transbox rounded-4xl p-6">
-            <h3 class="text-left text-8xl font-normal">1</h3>
-            <h4 class="text-left text-xl mt-2">Massage relaxant</h4>
-            <p class="mt-2 mb-6">
-              Libérez vos tensions et retrouvez énergie et sérénité.
-            </p>
-            <div class="mt-auto text-center">
-              <a href="#" class="brown-btn">Découvrir</a>
-            </div>
-          </div>
-
-          <!-- Carte 2 -->
-          <div class="flex flex-col flex-1 transbox rounded-4xl p-6">
-            <h3 class="text-left text-8xl font-normal">2</h3>
-            <h4 class="text-left text-xl mt-2">Soin du visage</h4>
-            <p class="mt-2 mb-6">
-              Offrez à votre peau éclat et douceur grâce à des soins adaptés à
-              chaque type de peau.
-            </p>
-            <div class="mt-auto text-center">
-              <a href="#" class="brown-btn">Découvrir</a>
-            </div>
-          </div>
-
-          <!-- Carte 3 -->
-          <div class="flex flex-col flex-1 transbox rounded-4xl p-6">
-            <h3 class="text-left text-8xl font-normal">3</h3>
-            <h4 class="text-left text-xl mt-2">Bain thermal</h4>
-            <p class="mt-2 mb-6">
-              Plongez dans un moment de pure détente et de ressourcement.
-            </p>
-            <div class="mt-auto text-center">
-              <a href="#" class="brown-btn">Découvrir</a>
-            </div>
-          </div>
-
-          <!-- Carte 4 -->
-          <div class="flex flex-col flex-1 transbox rounded-4xl p-6">
-            <h3 class="text-left text-8xl font-normal">4</h3>
-            <h4 class="text-left text-xl mt-2">Rituels corps & spa</h4>
-            <p class="mt-2 mb-6">
-              Des expériences complètes pour éveiller tous vos sens.
-            </p>
-            <div class="mt-auto text-center">
-              <a href="#" class="brown-btn">Découvrir</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Pourquoi nous choisir -->
-    <section
-      class="flex justify-center items-center about-bg-img lg:h-dvh h-fit lg:py-0 py-20"
-    >
-      <div class="container text-white text-center">
-        <div class="p-6">
-          <h2 class="font-h2-clamp">
-            Choisir L’éclat <span class="text-terracotta">de soi</span>, c’est
-            choisir l’excellence et la tranquillité
-          </h2>
-        </div>
-        <!-- Cards -->
-        <div>
-          <!-- Carte 1 -->
-          <div class="flex justify-end my-4">
-            <div
-              class="imgbox1 md:rounded-full rounded-4xl p-8 md:w-4/5 w-full"
-            >
-              <h3 class="font-bold text-xl">Experts certifiés</h3>
-              <p>
-                nos praticiens sont formés aux dernières techniques de
-                bien-être.
-              </p>
-            </div>
-          </div>
-          <!-- Carte 2 -->
-          <div class="flex justify-start my-4">
-            <div
-              class="imgbox2 md:rounded-full rounded-4xl p-8 md:w-4/5 w-full"
-            >
-              <h3 class="font-bold text-xl">Produits naturels</h3>
-              <p>
-                nous utilisons uniquement des produits bio et respectueux de
-                votre peau.
-              </p>
-            </div>
-          </div>
-          <!-- Carte 3 -->
-          <div class="flex justify-end my-4">
-            <div
-              class="imgbox3 md:rounded-full rounded-4xl p-8 md:w-4/5 w-full"
-            >
-              <h3 class="font-bold text-xl">Cadre apaisant</h3>
-              <p>
-                profitez d’une atmosphère intime et relaxante, loin du stress
-                quotidien.
-              </p>
-            </div>
-          </div>
-          <!-- Carte 4 -->
-          <div class="flex justify-start my-4">
-            <div
-              class="imgbox4 md:rounded-full rounded-4xl p-8 md:w-4/5 w-full"
-            >
-              <h3 class="font-bold text-xl">Avis clients authentiques</h3>
-              <p>
-                notre communauté nous recommande pour la qualité et l’accueil
-                chaleureux.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Témoignages -->
-    <section class="flex md:justify-start justify-center avis-bg-img h-fit">
-      <div class="md:w-1/2 w-full transbox h-full md:rounded-r-4xl">
+    <main>
+      <!-- HERO -->
+      <section class="hero hero-bg-img">
         <div class="container">
-          <div class="md:p-40 p-10 md:px-20">
-            <h2 class="font-h2-clamp text-center md:pb-0 pb-6">Témoignages</h2>
-            <!-- Cards -->
-            <!-- Carte 1 -->
-            <div class="relative pb-10">
-              <p
-                class="guillement absolute top-0 left-0 text-gray-300 select-none"
-              >
-                "
-              </p>
-              <p class="pt-20">
-                Une expérience inoubliable ! Le massage était parfait et
-                l’accueil chaleureux.
-              </p>
+          <div
+            class="beauty-animation opacity-0 delay-1 bg-black transbox rounded-4xl relative"
+          >
+            <div class="orbit orbit1 absolute top-20 left-50">
+              <div
+                class="float orbit1 bubble rounded-full h-[100px] w-[100px]"
+              ></div>
+            </div>
+            <div class="orbit orbit2 absolute top-10 right-20">
+              <div
+                class="float orbit2 bubble rounded-full h-[30px] w-[30px]"
+              ></div>
+            </div>
+            <div class="orbit orbit3 absolute bottom-30 right-70">
+              <div
+                class="float orbit3 bubble rounded-full h-[50px] w-[50px]"
+              ></div>
+            </div>
+            <div class="orbit orbit4 absolute bottom-30 left-30">
+              <div
+                class="float orbit4 bubble rounded-full h-[20px] w-[20px]"
+              ></div>
+            </div>
+            <div class="md:px-15 px-6 md:pt-15 md:pb-10 text-center">
+              <div class="beauty-animation opacity-0 delay-1">
+                <h1 class="font-h1-clamp pt-10 md:pb-8 pb-10">
+                  Offrez-vous un moment de sérénité absolue
+                </h1>
+              </div>
+              <div class="beauty-animation opacity-0 delay-2">
+                <h3 class="italic">
+                  Massages, soins du visage et bains relaxants pour revitaliser
+                  corps et esprit au cœur de Marseille
+                </h3>
+              </div>
 
-              <div class="flex justify-end">
-                <p class="">- Claire L.</p>
+              <div
+                class="md:p-15 px-6 md:pb-0 pb-10 hidden md:inline-flex beauty-animation opacity-0 delay-3"
+              >
+                <a
+                  href="#"
+                  class="brown-btn whitespace-nowrap"
+                  aria-label="Réservez votre séance maintenant"
+                  >Réservez votre séance maintenant</a
+                >
+              </div>
+              <div
+                class="beauty-animation opacity-0 delay-3 md:p-15 p-6 md:hidden inline-flex"
+              >
+                <a
+                  href="#"
+                  class="brown-btn whitespace-nowrap"
+                  aria-label="Réserver"
+                  >Réserver</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Qui sommes-nous ? -->
+      <section
+        id="about"
+        class="scroll-section flex justify-center items-center about-bg-img h-dvh"
+      >
+        <div class="container bg-black transbox rounded-4xl animate-on-scroll">
+          <div class="lg:p-10 p-6">
+            <div class="animate-on-scroll delay-1">
+              <h2 class="font-h2-clamp text-center lg:pb-0 pb-6">
+                Qui sommes-nous ?
+              </h2>
+            </div>
+
+            <div
+              class="flex lg:flex-row flex-col justify-between items-center gap-6 lg:m-6"
+            >
+              <img
+                class="animate-on-scroll delay-2 lg:w-1/2 w-full rounded-2xl aspect-[3/2]"
+                alt="spa"
+                width="1619px"
+                height="1080px"
+                src="img/spa.avif"
+              />
+              <div class="animate-on-scroll delay-3 lg:p-6">
+                <p class="">
+                  Chez <span>L'éclat de soi</span>, nous allions expertise et
+                  passion pour vous offrir des soins personnalisés dans un cadre
+                  apaisant.
+                </p>
+                <br />
+                <p>
+                  Chaque détail de notre spa est pensé pour que vous puissiez
+                  lâcher prise et profiter d’un véritable moment de bien-être.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Prestations -->
+      <section
+        id="services"
+        class="scroll-section flex justify-center items-center services-bg-img lg:h-dvh h-fit py-20"
+      >
+        <div class="container mx-auto px-4">
+          <div class="animate-on-scroll text-white text-center mb-12">
+            <h2 class="font-h2-clamp">Prestations</h2>
+            <p class="mt-4 text-lg md:text-xl">
+              Découvrez nos soins conçus pour votre détente et votre beauté :
+            </p>
+          </div>
+
+          <!-- Cards -->
+          <div class="flex gap-6 items-stretch flex-wrap">
+            <!-- Carte 1 -->
+            <div
+              class="animate-on-scroll delay-1 flex flex-col flex-1 transbox rounded-4xl p-6"
+            >
+              <h3 class="text-left text-8xl font-normal">1</h3>
+              <h4 class="text-left text-xl mt-2">Massage relaxant</h4>
+              <p class="mt-2 mb-6">
+                Libérez vos tensions et retrouvez énergie et sérénité.
+              </p>
+              <div class="mt-auto text-center">
+                <a href="#" class="brown-btn" aria-label="Découvrir"
+                  >Découvrir</a
+                >
+              </div>
+            </div>
+
+            <!-- Carte 2 -->
+            <div
+              class="animate-on-scroll delay-2 flex flex-col flex-1 transbox rounded-4xl p-6"
+            >
+              <h3 class="text-left text-8xl font-normal">2</h3>
+              <h4 class="text-left text-xl mt-2">Soin du visage</h4>
+              <p class="mt-2 mb-6">
+                Offrez à votre peau éclat et douceur grâce à des soins adaptés à
+                chaque type de peau.
+              </p>
+              <div class="mt-auto text-center">
+                <a href="#" class="brown-btn" aria-label="Découvrir"
+                  >Découvrir</a
+                >
+              </div>
+            </div>
+
+            <!-- Carte 3 -->
+            <div
+              class="animate-on-scroll delay-3 flex flex-col flex-1 transbox rounded-4xl p-6"
+            >
+              <h3 class="text-left text-8xl font-normal">3</h3>
+              <h4 class="text-left text-xl mt-2">Bain thermal</h4>
+              <p class="mt-2 mb-6">
+                Plongez dans un moment de pure détente et de ressourcement.
+              </p>
+              <div class="mt-auto text-center">
+                <a href="#" class="brown-btn" aria-label="Découvrir"
+                  >Découvrir</a
+                >
+              </div>
+            </div>
+
+            <!-- Carte 4 -->
+            <div
+              class="animate-on-scroll delay-4 flex flex-col flex-1 transbox rounded-4xl p-6"
+            >
+              <h3 class="text-left text-8xl font-normal">4</h3>
+              <h4 class="text-left text-xl mt-2">Rituels corps & spa</h4>
+              <p class="mt-2 mb-6">
+                Des expériences complètes pour éveiller tous vos sens.
+              </p>
+              <div class="mt-auto text-center">
+                <a href="#" class="brown-btn" aria-label="Découvrir"
+                  >Découvrir</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Pourquoi nous choisir -->
+      <section
+        class="scroll-section flex justify-center items-center about-bg-img lg:h-dvh h-fit lg:py-0 py-20"
+      >
+        <div class="container text-white text-center">
+          <div class="p-6 animate-on-scroll">
+            <h2 class="font-h2-clamp">
+              Choisir L’éclat <span class="text-terracotta">de soi</span>, c’est
+              choisir l’excellence et la tranquillité
+            </h2>
+          </div>
+          <!-- Cards -->
+          <div>
+            <!-- Carte 1 -->
+            <div class="animate-on-scroll delay-1 flex justify-end my-4">
+              <div
+                class="imgbox1 md:rounded-full rounded-4xl p-8 md:w-4/5 w-full"
+              >
+                <h3 class="font-bold text-xl">Experts certifiés</h3>
+                <p>
+                  nos praticiens sont formés aux dernières techniques de
+                  bien-être.
+                </p>
               </div>
             </div>
             <!-- Carte 2 -->
-            <div class="relative pb-10">
-              <p
-                class="guillement absolute top-0 left-0 text-gray-300 select-none"
+            <div class="animate-on-scroll delay-2 flex justify-start my-4">
+              <div
+                class="imgbox2 md:rounded-full rounded-4xl p-8 md:w-4/5 w-full"
               >
-                "
-              </p>
-              <p class="pt-20">
-                Je me suis sentie complètement détendue, le spa est magnifique
-                et très propre.
-              </p>
-
-              <div class="flex justify-end">
-                <p class="">- Marc D.</p>
+                <h3 class="font-bold text-xl">Produits naturels</h3>
+                <p>
+                  nous utilisons uniquement des produits bio et respectueux de
+                  votre peau.
+                </p>
               </div>
             </div>
             <!-- Carte 3 -->
-            <div class="relative pb-10">
-              <p
-                class="guillement absolute top-0 left-0 text-gray-300 select-none"
+            <div class="animate-on-scroll delay-3 flex justify-end my-4">
+              <div
+                class="imgbox3 md:rounded-full rounded-4xl p-8 md:w-4/5 w-full"
               >
-                "
-              </p>
-              <p class="pt-20">
-                Des soins de qualité et une équipe attentionnée. Je recommande
-                vivement !
-              </p>
-
-              <div class="flex justify-end">
-                <p class="">- Sophie R.</p>
+                <h3 class="font-bold text-xl">Cadre apaisant</h3>
+                <p>
+                  profitez d’une atmosphère intime et relaxante, loin du stress
+                  quotidien.
+                </p>
+              </div>
+            </div>
+            <!-- Carte 4 -->
+            <div class="animate-on-scroll delay-4 flex justify-start my-4">
+              <div
+                class="imgbox4 md:rounded-full rounded-4xl p-8 md:w-4/5 w-full"
+              >
+                <h3 class="font-bold text-xl">Avis clients authentiques</h3>
+                <p>
+                  notre communauté nous recommande pour la qualité et l’accueil
+                  chaleureux.
+                </p>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Accroche -->
-    <section class="flex justify-center items-center sentence-bg-img">
-      <div class="container text-white text-center">
-        <div class="py-50">
-          <h2 class="font-h2-clamp">
-            Entrez dans un espace conçu pour la détente et laissez-vous
-            transporter par l’ambiance apaisante de notre spa.
-          </h2>
+      <!-- Témoignages -->
+      <section
+        class="scroll-section flex md:justify-start justify-center avis-bg-img h-fit"
+      >
+        <div
+          class="md:w-1/2 w-full transbox h-full md:rounded-r-4xl animate-on-scroll"
+        >
+          <div class="container">
+            <div class="md:p-40 p-10 md:px-20">
+              <div class="animate-on-scroll delay-1">
+                <h2 class="font-h2-clamp text-center md:pb-0 pb-6">
+                  Témoignages
+                </h2>
+              </div>
+
+              <!-- Cards -->
+              <!-- Carte 1 -->
+              <div class="animate-on-scroll delay-2 relative pb-10">
+                <p
+                  class="guillement absolute top-0 left-0 text-gray-300 select-none"
+                >
+                  "
+                </p>
+                <p class="pt-20">
+                  Une expérience inoubliable ! Le massage était parfait et
+                  l’accueil chaleureux.
+                </p>
+
+                <div class="flex justify-end">
+                  <p class="">- Claire L.</p>
+                </div>
+              </div>
+              <!-- Carte 2 -->
+              <div class="animate-on-scroll delay-3 relative pb-10">
+                <p
+                  class="guillement absolute top-0 left-0 text-gray-300 select-none"
+                >
+                  "
+                </p>
+                <p class="pt-20">
+                  Je me suis sentie complètement détendue, le spa est magnifique
+                  et très propre.
+                </p>
+
+                <div class="flex justify-end">
+                  <p class="">- Marc D.</p>
+                </div>
+              </div>
+              <!-- Carte 3 -->
+              <div class="animate-on-scroll delay-4 relative pb-10">
+                <p
+                  class="guillement absolute top-0 left-0 text-gray-300 select-none"
+                >
+                  "
+                </p>
+                <p class="pt-20">
+                  Des soins de qualité et une équipe attentionnée. Je recommande
+                  vivement !
+                </p>
+
+                <div class="flex justify-end">
+                  <p class="">- Sophie R.</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Votre moment de bien-être vous attend. -->
-    <section class="flex justify-center items-center cta-bg-img">
-      <div class="container bg-black transbox rounded-4xl py-20 text-center">
-        <h2 class="font-h2-clamp text-center">
-          Votre moment de bien-être vous attend.
-        </h2>
+      <!-- Accroche -->
+      <section
+        class="scroll-section flex justify-center items-center sentence-bg-img"
+      >
+        <div class="container text-white text-center animate-on-scroll">
+          <div class="py-50">
+            <h2 class="font-h2-clamp">
+              Entrez dans un espace conçu pour la détente et laissez-vous
+              transporter par l’ambiance apaisante de notre spa.
+            </h2>
+          </div>
+        </div>
+      </section>
 
-        <div class="p-6">
-          <p class="">
-            Réservez dès maintenant votre séance et laissez-vous dorloter par
-            nos experts.
-          </p>
-          <br />
-          <div class="mt-auto text-center pt-10 hidden md:inline-flex">
-            <a href="#" class="brown-btn whitespace-nowrap"
-              >Réserver maintenant</a
+      <!-- Votre moment de bien-être vous attend. -->
+      <section
+        class="scroll-section flex justify-center items-center cta-bg-img"
+      >
+        <div
+          class="container bg-black transbox rounded-4xl py-20 text-center animate-on-scroll"
+        >
+          <div class="animate-on-scroll delay-1">
+            <h2 class="font-h2-clamp text-center">
+              Votre moment de bien-être vous attend.
+            </h2>
+          </div>
+
+          <div class="p-6">
+            <p class="animate-on-scroll delay-2">
+              Réservez dès maintenant votre séance et laissez-vous dorloter par
+              nos experts.
+            </p>
+            <br />
+            <div
+              class="animate-on-scroll delay-3 mt-auto text-center pt-10 hidden md:inline-flex"
             >
-          </div>
-          <div class="mt-auto text-center pt-10 md:hidden inline-flex">
-            <a href="#" class="brown-btn whitespace-nowrap">Réservez</a>
+              <a
+                href="#"
+                class="brown-btn whitespace-nowrap"
+                aria-label="Réserver maintenant"
+                >Réserver maintenant</a
+              >
+            </div>
+            <div
+              class="animate-on-scroll delay-3 mt-auto text-center pt-10 md:hidden inline-flex"
+            >
+              <a
+                href="#"
+                class="brown-btn whitespace-nowrap"
+                aria-label="Réserver"
+                >Réserver</a
+              >
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
 
-    <footer class="bg-silk md:p-20 p-8">
+    <footer class="scroll-section snap-start bg-silk md:p-20 p-8">
       <div
         class="container flex md:flex-row flex-col justify-between items-center md:text-left text-center"
       >
-        <div>
+        <div class="animate-on-scroll">
           <h2 class="font-h2-clamp">
             L'éclat <span class="text-terracotta">de soi</span>
           </h2>
           <p>Ouvert du Lundi au Samedi : 9h / 20h</p>
         </div>
-        <div class="text-2xl md:pt-0 pt-6">
-          <a href="#" class="text-brown hover:text-terracotta"
+        <div class="animate-on-scroll delay-1 text-2xl md:pt-0 pt-6">
+          <a
+            href="#"
+            class="text-brown hover:text-terracotta"
+            aria-label="facebook"
             ><i class="fa-brands fa-facebook"></i
           ></a>
-          <a href="#" class="text-brown hover:text-terracotta"
+          <a
+            href="#"
+            class="text-brown hover:text-terracotta"
+            aria-label="instagram"
             ><i class="fa-brands fa-instagram"></i
           ></a>
-          <a href="#" class="text-brown hover:text-terracotta"
+          <a
+            href="#"
+            class="text-brown hover:text-terracotta"
+            aria-label="youtube"
             ><i class="fa-brands fa-youtube"></i
           ></a>
         </div>
